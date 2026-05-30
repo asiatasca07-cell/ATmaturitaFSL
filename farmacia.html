@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html class="light" lang="it"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-error": "#ffffff",
+                "outline": "#727785",
+                "inverse-primary": "#adc6ff",
+                "surface-variant": "#d8e3fb",
+                "error": "#ba1a1a",
+                "surface-container": "#e7eeff",
+                "surface-dim": "#cfdaf2",
+                "surface-container-low": "#f0f3ff",
+                "on-primary-container": "#fefcff",
+                "outline-variant": "#c2c6d6",
+                "on-tertiary-fixed": "#311400",
+                "primary-container": "#2170e4",
+                "tertiary-fixed-dim": "#ffb786",
+                "surface-container-high": "#dee8ff",
+                "on-primary-fixed": "#001a42",
+                "tertiary-container": "#b75b00",
+                "inverse-on-surface": "#ecf1ff",
+                "tertiary-fixed": "#ffdcc6",
+                "surface-container-lowest": "#ffffff",
+                "primary-fixed-dim": "#adc6ff",
+                "secondary-fixed": "#d3e4fe",
+                "on-secondary": "#ffffff",
+                "on-secondary-fixed-variant": "#38485d",
+                "background": "#f9f9ff",
+                "secondary": "#505f76",
+                "tertiary": "#924700",
+                "primary": "#0058be",
+                "on-tertiary-fixed-variant": "#723600",
+                "surface": "#f9f9ff",
+                "on-error-container": "#93000a",
+                "on-tertiary": "#ffffff",
+                "secondary-container": "#d0e1fb",
+                "on-tertiary-container": "#fffbff",
+                "inverse-surface": "#263143",
+                "error-container": "#ffdad6",
+                "surface-container-highest": "#d8e3fb",
+                "secondary-fixed-dim": "#b7c8e1",
+                "on-surface": "#111c2d",
+                "on-secondary-fixed": "#0b1c30",
+                "on-surface-variant": "#424754",
+                "on-background": "#111c2d",
+                "surface-bright": "#f9f9ff",
+                "surface-tint": "#005ac2",
+                "on-secondary-container": "#54647a",
+                "primary-fixed": "#d8e2ff",
+                "on-primary-fixed-variant": "#004395",
+                "on-primary": "#ffffff"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "margin-desktop": "64px",
+                "xl": "80px",
+                "md": "24px",
+                "lg": "48px",
+                "base": "4px",
+                "max-width": "1200px",
+                "sm": "16px",
+                "xs": "8px",
+                "gutter": "24px",
+                "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                "body-lg": ["Inter"],
+                "label-md": ["Inter"],
+                "headline-xl": ["Inter"],
+                "headline-md": ["Inter"],
+                "headline-lg": ["Inter"],
+                "caption": ["Inter"],
+                "body-md": ["Inter"],
+                "headline-lg-mobile": ["Inter"]
+            },
+            "fontSize": {
+                "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                "headline-lg-mobile": ["24px", {"lineHeight": "1.2", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopAppBar -->
+<header class="bg-surface border-b border-outline-variant sticky top-0 z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-max-width mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary">PCTO Portfolio</div>
+<nav class="hidden md:flex items-center gap-md">
+<a class="text-secondary font-medium hover:text-primary transition-colors font-body-md text-body-md" href="index.html">Home</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md text-body-md" href="progetti.html">Progetti</a>
+</nav>
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary cursor-pointer p-2 hover:bg-surface-container-low rounded-lg transition-all">notifications</span>
+<span class="material-symbols-outlined text-primary cursor-pointer p-2 hover:bg-surface-container-low rounded-lg transition-all">account_circle</span>
+</div>
+</div>
+</header>
+<main class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop py-lg">
+<!-- Hero Section -->
+<section class="mb-xl">
+<div class="relative w-full h-[300px] md:h-[400px] rounded-xl overflow-hidden shadow-sm border border-outline-variant">
+<img alt="Pharmacy environment" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPbp9LtH4F6hVqKgtqrB35oAypXnXc3eN7z3PSxsDyAteK4J56IKJcGAj4Z63ogl6rFB_yGQj7hQ6iw_lYplV-O87nBNHGm0KuqSvEhiRS1YkejgxTkRRnPkman8aYpbg-XPLZNx924UwoA-2TkU_FYvhbtYnogKUW3LIjfU8p5sdIprbXLDPhCeEbse-fx_uzvYupcUcQpxUwEl06X7pnx199gHiy6yuE8QV5BDblQ527BITl_GEe3Fc34BbhYdG3rcXYJzrCxQ8"/>
+<div class="absolute inset-0 bg-black/40 flex items-end p-md md:p-lg">
+<h1 class="text-white font-headline-xl text-headline-xl">Farmacia</h1>
+</div>
+</div>
+</section>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-lg items-start">
+<!-- Left Column: Details & Skills -->
+<div class="md:col-span-4 space-y-md">
+<!-- Info Card -->
+<div class="bg-primary-container text-on-primary-container p-md md:p-lg rounded-xl shadow-sm border border-primary/10">
+<h3 class="font-headline-md text-headline-md mb-md">Dettagli Tirocinio</h3>
+<div class="space-y-sm">
+<div>
+<p class="font-label-md text-label-md uppercase opacity-80 flex items-center gap-xs">
+<span class="material-symbols-outlined text-[20px]">location_on</span> Sede
+                            </p>
+<p class="font-body-md text-body-md font-semibold mt-1">Farmacia San Martino- Alzano Lombardo</p>
+</div>
+<div>
+<p class="font-label-md text-label-md uppercase opacity-80 flex items-center gap-xs">
+<span class="material-symbols-outlined text-[20px]">calendar_today</span> Periodo
+                            </p>
+<p class="font-body-md text-body-md font-semibold mt-1">Agosto 2025</p>
+</div>
+<div>
+<p class="font-label-md text-label-md uppercase opacity-80 flex items-center gap-xs">
+<span class="material-symbols-outlined text-[20px]">person</span> Tutor
+                            </p>
+<p class="font-body-md text-body-md font-semibold mt-1">Dott. Andrea Raciti</p>
+</div>
+</div>
+</div>
+<!-- Competenze Section (Updated to align with Academic Clarity) -->
+<div class="bg-surface-container-lowest border border-outline-variant p-md md:p-lg rounded-xl">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-md">Competenze Acquisite</h3>
+<div class="flex flex-wrap gap-xs">
+<span class="bg-surface-container-high text-on-surface-variant px-sm py-2 rounded-full font-label-md text-label-md border border-outline-variant/30">Organizzazione spazio</span>
+<span class="bg-surface-container-high text-on-surface-variant px-sm py-2 rounded-full font-label-md text-label-md border border-outline-variant/30">Customer Care</span>
+<span class="bg-surface-container-high text-on-surface-variant px-sm py-2 rounded-full font-label-md text-label-md border border-outline-variant/30">Gestione Inventario</span>
+<span class="bg-surface-container-high text-on-surface-variant px-sm py-2 rounded-full font-label-md text-label-md border border-outline-variant/30">Normativa Sanitaria</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Diario & Riflessioni -->
+<div class="md:col-span-8 space-y-lg">
+<!-- Diario di Bordo Section -->
+<section>
+<div class="flex items-center gap-xs mb-md border-b border-outline-variant pb-base">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Diario di Bordo</h2>
+</div>
+<div class="bg-white border border-outline-variant p-md md:p-lg rounded-xl shadow-sm">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                            Ho svolto numerose attività, prima fra queste l'osservazione, monotona ma molto utile per apprendere le dinamiche tipiche di questo luogo. 
+                            Quasi tutti i giorni mi occupavo della "sistemazione" dei medicinali arrivati con il carico mattutino: la responsabile apriva gli scatoloni e scannerizzava i singoli prodotti con l'apposito programma, io poi li sistemavo nel cassetto corrispondente o procedevo ad etichettarli. 
+                            L'attività che ho svolto più in autonomia è stato il check dei prodotti scaduti, aggiornando il documento che riportava le scadenze e cestinando i farmaci effettivamente in via di scadenza.
+                        </p>
+</div>
+</section>
+<!-- Riflessioni Section -->
+<section>
+<div class="flex items-center gap-xs mb-md border-b border-outline-variant pb-base">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Riflessioni</h2>
+</div>
+<div class="bg-surface-container-low p-md md:p-lg rounded-xl border border-outline-variant shadow-sm">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed italic">
+                            "Ho imparato a vestire, letteralmente, i panni del farmacista: ho vissuto ritmi di lavoro che spaziavano dalla frenesia alla calma; ho compreso l'importanza della collaborazione fra professionisti diversi. Mi sono resa conto di come sia importante la precisione, l'ordine e la capacità di comunicare con i clienti nel miglior modo possibile. In farmacia le competenze richieste non si limitano alle conoscenze scientifiche ma anche alla capacità di linguaggio e di dialettica ."
+                        </p>
+</div>
+</section>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant mt-xl">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-md max-w-max-width mx-auto gap-sm">
+<div class="font-label-md text-label-md font-bold text-on-surface">PCTO Portfolio</div>
+<p class="font-caption text-caption text-on-secondary-container text-center md:text-left">
+                © 2026 PCTO Portfolio. Percorso Competenze Trasversali e Orientamento.
+            </p>
+<div class="flex gap-md">
+<a class="text-on-secondary-container hover:text-primary transition-all underline font-caption text-caption" href="#">Privacy Policy</a>
+<a class="text-on-secondary-container hover:text-primary transition-all underline font-caption text-caption" href="#">Termini di Servizio</a>
+<a class="text-on-secondary-container hover:text-primary transition-all underline font-caption text-caption" href="#">Contatti</a>
+</div>
+</div>
+</footer>
+</body></html>

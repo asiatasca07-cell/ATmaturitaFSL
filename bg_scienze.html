@@ -1,0 +1,236 @@
+<!DOCTYPE html><html lang="it" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed": "#d8e2ff",
+                    "on-surface-variant": "#424754",
+                    "on-background": "#111c2d",
+                    "on-tertiary-fixed-variant": "#723600",
+                    "surface": "#f9f9ff",
+                    "secondary-fixed": "#d3e4fe",
+                    "primary": "#0058be",
+                    "on-primary-fixed-variant": "#004395",
+                    "primary-fixed-dim": "#adc6ff",
+                    "on-error": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "background": "#f9f9ff",
+                    "on-tertiary": "#ffffff",
+                    "tertiary": "#924700",
+                    "secondary-container": "#d0e1fb",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-container": "#fffbff",
+                    "on-surface": "#111c2d",
+                    "outline": "#727785",
+                    "outline-variant": "#c2c6d6",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#fefcff",
+                    "tertiary-fixed-dim": "#ffb786",
+                    "on-primary-fixed": "#001a42",
+                    "on-tertiary-fixed": "#311400",
+                    "inverse-surface": "#263143",
+                    "inverse-primary": "#adc6ff",
+                    "secondary-fixed-dim": "#b7c8e1",
+                    "primary-container": "#2170e4",
+                    "surface-dim": "#cfdaf2",
+                    "error": "#ba1a1a",
+                    "surface-container-highest": "#d8e3fb",
+                    "tertiary-fixed": "#ffdcc6",
+                    "surface-tint": "#005ac2",
+                    "surface-container": "#e7eeff",
+                    "on-secondary-fixed-variant": "#38485d",
+                    "on-error-container": "#93000a",
+                    "surface-container-high": "#dee8ff",
+                    "on-secondary-container": "#54647a",
+                    "tertiary-container": "#b75b00",
+                    "surface-container-low": "#f0f3ff",
+                    "surface-bright": "#f9f9ff",
+                    "surface-variant": "#d8e3fb",
+                    "on-secondary-fixed": "#0b1c30",
+                    "inverse-on-surface": "#ecf1ff",
+                    "secondary": "#505f76"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "base": "4px",
+                    "sm": "16px",
+                    "max-width": "1200px",
+                    "xs": "8px",
+                    "margin-desktop": "64px",
+                    "lg": "48px",
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "xl": "80px",
+                    "md": "24px"
+            },
+            "fontFamily": {
+                    "body-md": ["Inter"],
+                    "headline-lg-mobile": ["Inter"],
+                    "headline-xl": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "caption": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { background-color: #f9f9ff; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-background">
+<!-- Top Navigation Shell -->
+<header class="bg-surface sticky top-0 z-50 border-b border-outline-variant shadow-sm">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-max-width mx-auto">
+<span class="font-headline-md text-headline-md font-bold text-primary">PCTO Portfolio</span>
+<nav class="hidden md:flex gap-md items-center">
+<a class="text-secondary font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1" href="progetti.html">Progetti</a>
+</nav>
+<div class="flex gap-sm">
+<button class="material-symbols-outlined text-primary p-2 hover:bg-surface-container-low rounded-lg transition-all">notifications</button>
+<button class="material-symbols-outlined text-primary p-2 hover:bg-surface-container-low rounded-lg transition-all">account_circle</button>
+</div>
+</div>
+</header>
+<main class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop py-lg">
+<!-- 1. Hero Section -->
+<section class="mb-lg">
+<div class="mb-md">
+<h1 class="font-headline-xl text-headline-xl text-on-surface mb-xs">Bergamo Scienza</h1>
+<p class="text-body-lg text-on-surface-variant max-w-2xl">Un'esperienza immersiva nella divulgazione scientifica, supportando laboratori didattici e interazione con il pubblico per promuovere la cultura STEM.</p>
+</div>
+<div class="relative w-full aspect-[21/9] rounded-xl overflow-hidden shadow-sm border border-outline-variant">
+<img class="w-full h-full object-cover" data-alt="A professional high-angle photograph of a modern science exhibition hall in Bergamo, Italy. The lighting is bright and airy, reflecting a clean academic atmosphere with soft blue accents throughout the space. Students in white lab coats interact with curious visitors around high-tech digital displays and interactive physics models. The overall mood is intellectually stimulating, professional, and forward-looking, emphasizing a sophisticated corporate-academic aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-EFFt8x4uhWy343vr1xAGiZ1V5G9EV4xOyFv4rGlrAB1QN8xs7B4Fll9A_lzHWPb6e-NgKcihRXk78FhEegu57945BuOWucLGttCgwiOyYduNN4FqUO4a6D2-mA1RtQr7s_zm4FWKVmqcIuKs-ocbu6AXfwCqXR3VoBsOVV3GER7HbzUnHM5YXtFjxsYSNqRu7Lc2_KF0O_YbJ_ybmfCDswKiDD0DAMOIWp9ITyIAjkuc_BnArWUk25bw3b5MYCZWyEH8xKGBs7c">
+</div>
+</section>
+<!-- Main Content Layout: Asymmetric Bento Style -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- 2. Logistics & Info (Blue Box) - Side Column Desktop -->
+<aside class="md:col-span-4 flex flex-col gap-gutter">
+<div class="bg-primary-container text-on-primary-container p-md rounded-xl shadow-sm border border-primary/20">
+<h2 class="font-headline-md text-headline-md mb-md border-b border-on-primary-container/20 pb-xs">Logistica</h2>
+<ul class="space-y-md">
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined mt-1">location_on</span>
+<div>
+<p class="font-label-md text-label-md opacity-80">Sede</p>
+<p class="font-body-md font-semibold">Liceo Edoardo Amaldi- Alzano Lombardo</p>
+</div>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined mt-1">calendar_month</span>
+<div>
+<p class="font-label-md text-label-md opacity-80">Periodo</p>
+<p class="font-body-md font-semibold">Settembre 2023-Ottobre 2023</p>
+</div>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined mt-1">groups</span>
+<div>
+<p class="font-label-md text-label-md opacity-80">Partner</p>
+<p class="font-body-md font-semibold">Fondazione Bergamoscienza</p>
+</div>
+</li>
+</ul>
+</div>
+<!-- 4. Competenze Acquisite -->
+<div class="bg-white p-md rounded-xl border border-outline-variant shadow-sm"><h2 class="font-headline-md text-headline-md text-primary mb-md">Competenze Acquisite</h2><div class="space-y-sm"><div><div class="flex justify-between mb-xs"><span class="font-label-md text-label-md text-on-surface">Divulgazione Scientifica</span><span class="font-label-md text-label-md text-primary"></span></div><div class="w-full h-2 bg-surface-container-highest rounded-full"><div class="bg-primary h-full rounded-full" style="width: 90%"></div></div></div><div><div class="flex justify-between mb-xs"><span class="font-label-md text-label-md text-on-surface">Problem Solving</span><span class="font-label-md text-label-md text-primary"></span></div><div class="w-full h-2 bg-surface-container-highest rounded-full"><div class="bg-primary h-full rounded-full" style="width: 80%"></div></div></div><div><div class="flex justify-between mb-xs"><span class="font-label-md text-label-md text-on-surface">Lavoro di Squadra</span><span class="font-label-md text-label-md text-primary"></span></div><div class="w-full h-2 bg-surface-container-highest rounded-full"><div class="bg-primary h-full rounded-full" style="width: 85%"></div></div></div></div></div>
+</aside>
+<!-- Main Content Area -->
+<div class="md:col-span-8 flex flex-col gap-gutter">
+<!-- 3. Diario di Bordo -->
+<section class="bg-white p-md rounded-xl border border-outline-variant shadow-sm">
+<h2 class="font-headline-md text-headline-md text-primary mb-md flex items-center gap-sm">
+ Diario di Bordo
+                    </h2>
+<div class="space-y-lg">
+<article class="relative pl-sm border-l-4 border-primary/20">
+<span class="font-label-md text-label-md text-primary block mb-xs">SETTIMANA 1-2</span>
+<h3 class="font-body-lg font-bold mb-xs">Formazione e Preparazione</h3>
+<p class="text-body-md text-on-surface-variant"><span style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif; font-size: small;" class="">Incontri pomeridiani nel laboratorio scolastico: tutti insieme o a piccoli gruppi ci siamo incontrati per pensare ed elaborare insieme una serie di esperimenti da presentare alle scuole. Collaborando con compagni più grandi che, avendo maggiore esperienza, sapevano svolgere esperimenti che non rientravano fra le mie competenze.</span></p>
+</article>
+<article class="relative pl-sm border-l-4 border-primary/20">
+<span class="font-label-md text-label-md text-primary block mb-xs">SETTIMANA 3-4</span>
+<h3 class="font-body-lg font-bold mb-xs">Fase operatrice</h3>
+<p class="text-body-md text-on-surface-variant"><span style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif; font-size: small;" class="">Abbiamo eseguito autonomamente, davanti ai bambini, nel sentierone del centro della città, gli esperimenti preparati.</span></p>
+</article>
+<article class="relative pl-sm border-l-4 border-primary/20">
+
+
+
+</article>
+</div>
+</section>
+<!-- 5. Riflessioni (Quote-style) -->
+<section class="bg-surface-container-high p-md rounded-xl border border-outline-variant relative overflow-hidden">
+
+<h2 class="font-headline-md text-headline-md text-primary mb-md">Riflessioni&nbsp;</h2>
+<div class="relative z-10">
+<blockquote class="font-body-lg italic text-on-surface leading-relaxed mb-md"><span style="background-color: rgb(222, 232, 255);" class="">Ho appreso nuove conoscenze fisiche e chimiche: nello specifico ho imparato tutte le reazioni collegate alla fiamma. Oltre alla lezione puramente scientifica ho imparato metodi&nbsp; alternativi, e piu semplici, per spiegare la teoria ai bambini</span></blockquote>
+<div class="flex items-center gap-sm">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center">
+
+</div>
+<div>
+
+
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant mt-xl">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-md max-w-max-width mx-auto gap-sm">
+<div class="text-center md:text-left">
+<span class="font-label-md text-label-md font-bold text-on-surface">PCTO Portfolio</span>
+<p class="font-caption text-caption text-on-secondary-container mt-1">© 2026 PCTO Portfolio. Percorso Competenze Trasversali e Orientamento.</p>
+</div>
+<div class="flex gap-md">
+<a class="font-caption text-caption text-on-secondary-container hover:text-primary transition-all underline" href="#">Privacy Policy</a>
+<a class="font-caption text-caption text-on-secondary-container hover:text-primary transition-all underline" href="#">Termini di Servizio</a>
+<a class="font-caption text-caption text-on-secondary-container hover:text-primary transition-all underline" href="#">Contatti</a>
+</div>
+</div>
+</footer>
+
+
+
+
+
+
+</body></html>
