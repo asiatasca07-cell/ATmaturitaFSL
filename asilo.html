@@ -1,11 +1,10 @@
 <!DOCTYPE html><html lang="it" style=""><head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Asilo - PCTO Portfolio</title>
+<title>InfoSostenibile SOS - PCTO Portfolio</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
 <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
@@ -103,125 +102,148 @@
       }
     </script>
 <style>
-        body { font-family: 'Inter', sans-serif; background-color: #f9f9ff; }
-        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-        .hero-gradient { background: linear-gradient(180deg, rgba(0, 88, 190, 0.05) 0%, rgba(249, 249, 255, 1) 100%); }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #f9f9ff;
+            color: #111c2d;
+        }
     </style>
 </head>
-<body class="text-on-surface">
-<!-- TopAppBar -->
-<header class="bg-surface docked full-width top-0 border-b border-outline-variant shadow-sm sticky z-50">
+<body class="font-body-md text-body-md">
+<header class="bg-surface docked full-width top-0 shadow-sm border-b border-outline-variant z-50 sticky">
 <div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-max-width mx-auto">
 <span class="font-headline-md text-headline-md font-bold text-primary">PCTO Portfolio</span>
-<nav class="hidden md:flex gap-md items-center">
-<a class="text-secondary font-medium hover:text-primary transition-colors font-body-md text-body-md" href="index.html">Home</a>
-<a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md text-body-md" href="progetti.html">Progetti</a>
+<nav class="hidden md:flex gap-md">
+<a class="text-secondary font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1" href="progetti.html">Progetti</a>
 </nav>
-<div class="flex gap-sm">
-<button class="material-symbols-outlined text-primary p-2 hover:bg-surface-container-low rounded-lg transition-all active:scale-95">notifications</button>
-<button class="material-symbols-outlined text-primary p-2 hover:bg-surface-container-low rounded-lg transition-all active:scale-95">account_circle</button>
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">notifications</span>
+<span class="material-symbols-outlined text-primary text-[24px]">account_circle</span>
 </div>
 </div>
 </header>
 <main class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop py-lg">
-<!-- Hero Section -->
-<section class="mb-xl">
-<div class="relative w-full h-[400px] rounded-xl overflow-hidden mb-md border border-outline-variant">
-<img class="w-full h-full object-cover" data-alt="A bright and airy classroom in a modern kindergarten with colorful wooden furniture and large windows letting in soft natural light. The environment is organized and minimalist, featuring soft blue and white tones to match a professional academic portfolio style. Educational toys are neatly arranged on low shelves, creating a serene and productive learning atmosphere for children." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXXjobdGHIfJtM5_htwPETwwE5BbMeQ0sihc98ag2gHnLdFJKwe55XKz5M0Uk8PCDdGW6xVSnWo0tZUHD12ZcrJ7j_sfZ_5AkMeU6svsGrfSqB6zKZCE1NaesNymLIOrrrUWFdQ2TnnytQ9pUvav-BA040KnWpNnwy505JpirTBMsQxfdRuFogzeLSfpW7_pXk8DvX4RWCuE-aVvht25Cm9imCNvBhknoVjtgU1JAywaiyjaxMGCT6CyAD3tH-xHdiSpmPZw26zgw">
-<div class="absolute inset-0 bg-gradient-to-t from-on-background/60 to-transparent flex flex-col justify-end p-md md:p-lg">
-<h1 class="font-headline-xl text-headline-xl text-white mb-2">Scuola Materna Carsana</h1>
-
+<section class="mb-lg">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md items-center">
+<div>
+<nav class="flex items-center gap-xs mb-sm text-secondary">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<a class="font-label-md text-label-md hover:text-primary transition-colors" href="#">Torna ai progetti</a>
+</nav>
+<h1 class="font-headline-xl text-headline-xl text-on-background mb-sm">InfoSostenibile SOS</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-prose">Progetto focalizzata sulla sensibilizzazione ambientale e la comunicazione digitale per promuovere pratiche sostenibili nella comunità locale.
+                    </p>
+</div>
+<div class="rounded-xl overflow-hidden border border-outline-variant shadow-sm h-[320px]">
+<img alt="Asilo Progetto" class="w-full h-full object-cover" src="./Asia/asilo_page_asilo.jpg">
 </div>
 </div>
 </section>
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
-<!-- Information Box (Riquadro Azzurro) -->
-<div class="lg:col-span-4">
-<div class="bg-primary-container p-md rounded-xl text-on-primary-container shadow-md sticky top-24">
-<h3 class="font-headline-md text-headline-md mb-md border-b border-white/20 pb-2">Dettagli Progetto</h3>
-<div class="space-y-sm">
+<section class="mb-lg">
+<div class="bg-primary-container text-on-primary-container rounded-xl p-md grid grid-cols-1 md:grid-cols-3 gap-md border border-primary/20">
+<div class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary-fixed bg-on-primary-fixed-variant p-2 rounded-lg">location_on</span>
 <div>
-<p class="font-label-md text-label-md opacity-80">SEDE</p>
-<p class="font-body-md text-body-md font-bold">Scuola Materna A. Carsana- Alzano Lombardo</p>
+<p class="font-label-md text-label-md uppercase tracking-wider opacity-80">Sede</p>
+<p class="font-headline-md text-headline-md">Liceo Edoardo Amaldi- Alzano Lombardo </p>
 </div>
+</div>
+<div class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary-fixed bg-on-primary-fixed-variant p-2 rounded-lg">calendar_today</span>
 <div>
-<p class="font-label-md text-label-md opacity-80">PERIODO</p>
-<p class="font-body-md text-body-md font-bold">Giugno 2024</p>
+<p class="font-label-md text-label-md uppercase tracking-wider opacity-80">Periodo</p>
+<p class="font-headline-md text-headline-md">Aprile 2024-Maggio 2024</p>
 </div>
+</div>
+<div class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary-fixed bg-on-primary-fixed-variant p-2 rounded-lg">person</span>
 <div>
-<p class="font-label-md text-label-md opacity-80">TUTOR</p>
-<p class="font-body-md text-body-md font-bold">Maestra Marta Noris</p>
+<p class="font-label-md text-label-md uppercase tracking-wider opacity-80">PARTNER</p>
+<p class="font-headline-md text-headline-md">Distretto dell'economia sociale solidale bergamasca</p>
 </div>
 </div>
-<div class="mt-md pt-md border-t border-white/20">
-
-</div>
-</div>
-</div>
-<!-- Content Area -->
-<div class="lg:col-span-8 space-y-lg">
-<!-- Diario di Bordo -->
-<section>
-<h2 class="font-headline-lg text-headline-lg mb-md text-primary">Diario di Bordo</h2>
-<div class="space-y-sm">
-<div class="rounded-xl border border-outline-variant hover:shadow-lg transition-all bg-surface-container-low p-lg"><p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-4">Le giornate all’asilo sono all’incirca tutte uguali ma con attività diverse ogni giorno: all'inizio l’accoglienza, durante la quale i bambini in cortile saltano, ballano, giocano, poi vengono portati nelle loro classi. L’ambiente   davvero molto organizzato e ogni bambino sa qualè&nbsp; &nbsp;il proprio compito e dove mettere le proprie cose.</p><p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-4">Dopo la merenda, si svolgono attività , di tutti i tipi e generi: giochi individuali, di gruppo, lettura di storie, visioni di film</p><p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-4">A seguito del pranzo c’è&nbsp; il momento che sicuramente mi   piaciuto di piu: io ed altre maestre accompagnavamo i bambini nella ‘Sala della nanna’, dedicata al riposino del primo pomeriggio dei pi  piccoli.</p><p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Post pisolino, si torna in classe, si svolgono altre attività e dopo i genitori vengono a riprenderli.</p></div>
-
-
 </div>
 </section>
-<!-- Competenze Acquisite -->
-<section>
-<h2 class="font-headline-lg text-headline-lg mb-md text-primary">Competenze Acquisite</h2>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-sm">
-<div class="flex items-start gap-sm p-sm bg-white border border-outline-variant rounded-xl">
-<span class="material-symbols-outlined text-primary" style="font-variation-settings: &quot;FILL&quot; 1;">groups</span>
-<div>
-<p class="font-bold font-body-md text-body-md">Soft Skills</p>
-<p class="font-caption text-caption text-on-surface-variant">Empatia, pazienza e capacità di mediazione dei conflitti tra pari.</p>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-md mb-lg">
+<section class="lg:col-span-2 space-y-md">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-lg text-headline-lg text-on-background">Diario di Bordo</h2>
 </div>
+<div class="bg-white border border-outline-variant rounded-xl p-md hover:shadow-md transition-all">
+<div class="flex items-center gap-xs mb-xs text-primary">
+<span class="material-symbols-outlined text-[18px]">event</span>
+<span class="font-label-md text-label-md">Introduzione</span>
 </div>
-<div class="flex items-start gap-sm p-sm bg-white border border-outline-variant rounded-xl">
-<span class="material-symbols-outlined text-primary" style="font-variation-settings: &quot;FILL&quot; 1;">assignment_turned_in</span>
-<div>
-<p class="font-bold font-body-md text-body-md">Organizzazione</p>
-<p class="font-caption text-caption text-on-surface-variant">Pianificazione di attività didattiche strutturate per fasce d'età.</p>
+<p class="text-on-surface-variant"><span class="" style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif; font-size: small;">Abbiamo incontrato 3 giornalisti, rappresentanti del giornale "InfoSostenibile SOS" che, dopo aver presentato brevemente la storia della rivista, hanno spiegato i punti fondamentali per la stesura di un articolo piacevole per il lettore. </span></p>
 </div>
+<div class="bg-white border border-outline-variant rounded-xl p-md hover:shadow-md transition-all">
+<div class="flex items-center gap-xs mb-xs text-primary">
+<span class="material-symbols-outlined text-[18px]">event</span>
+<span class="font-label-md text-label-md">Produzione Contenuti</span>
 </div>
+<p class="text-on-surface-variant"><span class="" style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif; font-size: small;">E' stato condiviso un questionario con una dozzina di domande sulle proprie abitudini e sulla propria quotidianità con tutti gli studenti della scuola. Divisi in gruppi abbiamo scritto piccoli articoli che hanno poi costituito </span><span class="" style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif; font-size: small;">6 pagine di giornale, riguardanti le abitudini ambientali degli studenti dell’Amaldi. Le nostre pagine sono state poi pubblicate nell'edizione di Giugno 2024. </span></p>
 </div>
-<!-- Progress towards goals -->
-
 </section>
-<!-- Riflessioni -->
-<section class="bg-white p-md rounded-xl border-l-4 border-l-primary border border-outline-variant shadow-sm">
-  <h2 class="font-headline-lg text-headline-lg mb-md text-primary flex items-center gap-xs">
-    
-    Riflessioni
-  </h2>
-  <p class="font-body-md text-body-md text-on-surface-variant italic leading-relaxed">Questa esperienza mi ha molto aiutato a crescere: ho imparato a stare con i bambini, a passare le intere giornate con loro, a capire le loro esigenze e il loro linguaggio. I bambini hanno un modo tutto loro di vivere le giornate, spesso mi è sembrato non si stancassero mai, che svolgessero, anche per un’intera giornata, le stesse attività o gli stessi giochi, senza annoiarsi. Ho imparato a giocare con loro o banalmente a guardarli giocare, consapevole che era ciò che volevano. Ho collaborato con le maestre e ho compreso molto di più sul loro ruolo nell’ambiente scolastico.</p>
+<section class="space-y-md">
+<h2 class="font-headline-lg text-headline-lg text-on-background">Competenze</h2>
+<div class="bg-white border border-outline-variant rounded-xl p-md h-full shadow-sm"><div class="flex flex-wrap gap-3">
+<div class="flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full border border-primary/20">
+<span class="material-symbols-outlined text-[18px] text-primary">campaign</span>
+<span class="text-[14px] font-medium text-primary">Comunicazione Digitale</span>
+</div>
+<div class="flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full border border-primary/20">
+<span class="material-symbols-outlined text-[18px] text-primary">analytics</span>
+<span class="text-[14px] font-medium text-primary">Analisi Dati</span>
+</div>
+<div class="flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full border border-primary/20">
+<span class="material-symbols-outlined text-[18px] text-primary">palette</span>
+<span class="text-[14px] font-medium text-primary">Graphic Design</span>
+</div>
+<div class="flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full border border-primary/20">
+<span class="material-symbols-outlined text-[18px] text-primary">psychology</span>
+<span class="text-[14px] font-medium text-primary">Problem Solving</span>
+</div>
+<div class="flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full border border-primary/20">
+<span class="material-symbols-outlined text-[18px] text-primary">groups</span>
+<span class="text-[14px] font-medium text-primary">Teamwork</span>
+</div>
+<div class="flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full border border-primary/20">
+<span class="material-symbols-outlined text-[18px] text-primary">schedule</span>
+<span class="text-[14px] font-medium text-primary">Gestione Tempo</span>
+</div>
+</div></div>
 </section>
 </div>
+<section class="bg-white border border-outline-variant rounded-xl p-lg relative overflow-hidden bg-surface-container-low border-l-4 border-l-primary">
+<div class="absolute top-0 right-0 p-4 opacity-5 pointer-events-none">
+<span class="material-symbols-outlined text-[160px] text-primary/10">format_quote</span>
 </div>
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-md"><div class="flex items-center gap-2 mb-2"><div class="w-1 h-8 bg-primary rounded-full"></div><span class="font-headline-lg text-headline-lg text-on-background">Riflessioni Finali</span></div></h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-lg items-center">
+<div class="space-y-md">
+<p class="text-body-lg font-body-lg text-on-surface-variant italic leading-relaxed" data-stitch-orig-opacity="0">Ho ampliato le mie conoscenze tecnologiche e informatiche: ad usare in maniera più furba e veloce i siti e le applicazioni che permettono di calcolare dati e creare grafici. Ho collaborato, facendo lavoro di squadra con i miei compagni, e con gli esperti del giornalino, i cui consigli hanno reso possibile la realizzazione dell’infografica sui dati raccolti. Questo lavoro inoltre mi ha permesso di dare uno sguardo all’interno del mondo del giornalismo: scoprendo le regole principali per scrivere un articolo corretto e nei tempi previsti.</p>
+</div>
+<div class="aspect-video rounded-xl overflow-hidden border border-outline-variant">
+<img alt="Reflections" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSL726Il-x1gyknRTWmLYie8yaNfaXEornrgOD6PMwjjWOlaVYikyQrS-LYGlErJ36Ap3NkPWrEjFZ2SP5NMsDWWjXvOl9DCskR9O2yEr8tDeDwLd55ggM6ZfTMj9_1Tb18KHJnJFzdDjUkyzFs4Faj15NjCpSH3SmINLK4pq15v2XgoXUE_bvQlFMXzHUM8LFlR7WTRMHwx9V8pa0KoHTzXoNw0gmPgn4MDk5saMwY9GYHe3lmbBCxXjVfKTTOSW87VWEIhm5lwI">
+</div>
+</div>
+</section>
 </main>
-<!-- Footer -->
-<footer class="bg-surface-container-lowest full-width bottom-0 border-t border-outline-variant">
+<footer class="bg-surface-container-lowest full-width bottom-0 border-t border-outline-variant mt-xl">
 <div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-md max-w-max-width mx-auto gap-sm">
-<div class="flex flex-col gap-xs">
+<div class="flex flex-col gap-xs items-center md:items-start">
 <span class="font-label-md text-label-md font-bold text-on-surface">PCTO Portfolio</span>
 <p class="font-caption text-caption text-on-secondary-container">© 2026 PCTO Portfolio. Percorso Competenze Trasversali e Orientamento.</p>
 </div>
-<div class="flex gap-md">
-<a class="text-on-secondary-container font-caption text-caption hover:text-primary hover:underline transition-all" href="#">Privacy Policy</a>
-<a class="text-on-secondary-container font-caption text-caption hover:text-primary hover:underline transition-all" href="#">Termini di Servizio</a>
-<a class="text-on-secondary-container font-caption text-caption hover:text-primary hover:underline transition-all" href="#">Contatti</a>
-</div>
+<nav class="flex gap-md">
+<a class="font-caption text-caption text-on-secondary-container hover:text-primary transition-all hover:underline" href="#">Privacy Policy</a>
+<a class="font-caption text-caption text-on-secondary-container hover:text-primary transition-all hover:underline" href="#">Termini di Servizio</a>
+<a class="font-caption text-caption text-on-secondary-container hover:text-primary transition-all hover:underline" href="#">Contatti</a>
+</nav>
 </div>
 </footer>
-
-
-
-
-
-
-
-
 </body></html>
